@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "conv."
+// Function to perform conversion
+int main()
+{
+  double cm, inch;
+  printf("How long inches: ");
+  if (scanf("%lf", &inch)) {
+    cm = inchesToCm(inch);
+    printf("%.4lf inches is %.4lf cm\n", inch, cm);
+  } else {
+    printf("Invalid input. Plesae enter valid floating point numbers.\n");
+  }
+  return 0;
+}
+
+
+
+  
