@@ -2,8 +2,9 @@
 path="/usr/lib/git-core"
 while true
 do
-	
-	git commit -m "Auto-commit at : "
-	git pull 
-	git push -u origin master
+    git init
+    git add .
+    git commit -m "Testi"
+    git remote add origin https://github.com/ahmet-ari/ahmetari_swd
+    git push -u origin master
 done
